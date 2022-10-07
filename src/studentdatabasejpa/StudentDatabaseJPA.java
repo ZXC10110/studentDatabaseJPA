@@ -52,7 +52,7 @@ public class StudentDatabaseJPA {
     }
     
     public static void persist(Object object) {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("EmployeeDatabaseJPAPU");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("StudentDatabaseJPAPU");
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
         try {
